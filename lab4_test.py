@@ -44,7 +44,8 @@ def test_invalid_person_negative_id():
     with pytest.raises(ValidationError):
         Person(id=-1, name="Maks", addr="Lviv")
 
-
+ 
+ 
 def test_invalid_person_empty_name():
     with pytest.raises(ValidationError):
         Person(id=1, name="", addr="Lviv")
