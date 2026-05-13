@@ -1,0 +1,9 @@
+type,id,view,desc,block_id,voter_id,timestamp,source_id,name,addr,ip_addr,country_code
+block,0xB010,0,new block,,,,,,,,
+person,11,,,,,,,Ivan,Lviv,,
+source,11,,,,,,,,,10.1.1.1,UA
+vote,,,,0xB010,1,2026-03-23 19:10:00,11,,,,
+block,0xB011,1,another block,,,,,,,,
+person,12,,,,,,,Oksana,Kyiv,,
+source,12,,,,,,,,,10.1.1.2,PL
+vote,,,,0xB011,0,2026-03-23 19:11:05,12,,,,
