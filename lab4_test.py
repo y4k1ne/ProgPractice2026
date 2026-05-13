@@ -26,7 +26,7 @@ def test_source_valid():
 
 def test_source_invalid_ip():
     with pytest.raises(ValidationError):
-        Source(id=6, ip_addr="", country_code="US")
+        Source(id=6, ip_addr="іі", country_code="US")
 
 
 def test_source_invalid_country():
@@ -45,7 +45,7 @@ def test_invalid_person_negative_id():
         Person(id=-1, name="Maks", addr="Lviv")
 
  
- 
+
 def test_invalid_person_empty_name():
     with pytest.raises(ValidationError):
         Person(id=1, name="", addr="Lviv")
