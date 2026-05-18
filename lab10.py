@@ -19,7 +19,7 @@ def threads():
     threads = []
     start = time.time()
 
-    for t in range(100):
+    for _ in range(100):
         t = threading.Thread(target=blur, args=("input-image-of-wood.jpg",))
         threads.append(t)
         t.start()

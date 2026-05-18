@@ -1,4 +1,4 @@
-# BlockProcessor (Labs 2–6)
+# Project (Labs 2–6)
 
 ## Project Description
 
@@ -14,26 +14,6 @@ The project showcases:
 - Data validation with Pydantic
 - Testing using Pytest
 
-## Project Structure
-
-project
-│
-|--- main.py              # Entry point
-|---db.py                # SQLite connect
-│
-|--- processor/
-│   |--BlockProcessor.py  # Core processing logic
-│
-|--- updater/
-│   |-- updater.py       # CLI tool for inserting data into DB
-│
-|---data/
-│   |- blocks.csv
-│   |- votes.csv
-│   |-  persons.csv
-│   |- sources.csv
-│
-|--- lab3.db              # SQLite database
 ## Features
 
 - Load data from CSV files or accept it via user input
@@ -73,12 +53,8 @@ L --> M[Output]
 
 M --> N[End]
 
-linkStyle 0,1,2,3,4,5,6,7,8,9,10,11,12 stroke-width:15px
 
-### 1. Fill the database with data
-python updater.py
-### 2. Launch main program
-python main.py
+
 ## Notes
 - The database is saved locally in lab3.db 
 - The system can be easily expanded (for example, by adding an API or a user interface)
