@@ -19,7 +19,7 @@ def threads():
     threads = []
     start = time.time()
 
-    for _ in range(100):
+    for i in range(100):
         t = threading.Thread(target=blur, args=("input-image-of-wood.jpg",))
         threads.append(t)
         t.start()
@@ -34,7 +34,7 @@ def processes():
     processes = []
     start = time.time()
 
-    for _ in range(100):
+    for i in range(100):
         p = multiprocessing.Process(target=blur, args=("input-image-of-wood.jpg",))
         processes.append(p)
         p.start()
